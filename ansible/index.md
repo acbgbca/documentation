@@ -34,3 +34,20 @@ E.g.
 ```
 ansible-playbook -i hosts docker.yml --tags docker
 ```
+
+## Encrypt values
+
+```ansible-vault encrypt_string '<string_to_encrypt>' --name '<string_name_of_variable>'```
+
+I.e.
+
+```
+ansible-vault encrypt_string 'secret' --name 'key'
+
+Encryption successful
+key: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          <encrypted value>
+```
+
+Note: This requires ANSIBLE_VAULT_PASSWORD_FILE to be set to the location of the password file
