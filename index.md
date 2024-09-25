@@ -7,5 +7,6 @@ A repository of notes, instructions, and learnings so that I don't need to Googl
 * [Docker](docker/)
 * [Git](git/)
 * [Java](java/)
+* [Kubernetes](kubernetes/)
 * [Linux](linux/)
 * [Proxmox](proxmox/)
