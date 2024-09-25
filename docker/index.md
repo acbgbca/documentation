@@ -57,3 +57,7 @@ services:
       - internal
       - default
 ```
+
+## Include other compose files
+
+From Docker Compose 2.20.3 it is possible to include other compose files into the file. See [Docker Docs Include](https://docs.docker.com/compose/how-tos/multiple-compose-files/include/)
