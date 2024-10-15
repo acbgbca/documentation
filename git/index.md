@@ -1,5 +1,15 @@
 # Git
 
+## Set executable on a commited file
+
+See https://stackoverflow.com/a/40979016
+
+To change the executable flag on a file that has already been committed:
+```git update-index --chmod=+x path/to/file```
+
+To remove it:
+```git update-index --chmod=-x path/to/file```
+
 ## Delete Merged Branches
 
 ```git for-each-ref --format '%(refname:short)' refs/heads --merged|grep -v "master\|main"|xargs git branch -d```
