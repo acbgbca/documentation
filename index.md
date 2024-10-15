@@ -9,4 +9,5 @@ A repository of notes, instructions, and learnings so that I don't need to Googl
 * [Java](java/)
 * [Kubernetes](kubernetes/)
 * [Linux](linux/)
+* [Postgres](postgres/)
 * [Proxmox](proxmox/)
