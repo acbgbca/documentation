@@ -10,6 +10,13 @@ To change the executable flag on a file that has already been committed:
 To remove it:
 ```git update-index --chmod=-x path/to/file```
 
+## Rebase a specific number of commits
+
+To rebase a specific number of commits (I.e. 5) onto a specific branch (in this case main)
+```git rebase -i HEAD~5 --onto main```
+
+Useful if you created a feature branch off of the wrong branch, and you don't want to make sure only specific commits are bought across.
+
 ## Delete Merged Branches
 
 ```git for-each-ref --format '%(refname:short)' refs/heads --merged|grep -v "master\|main"|xargs git branch -d```
