@@ -10,6 +10,12 @@ Run with ```-Dtest=ClassName```
 
 Note: You only need the class name, not the full class with package. To run a single test within a class use ```-Dtest=ClassName#method```
 
+## Run a Test in debug mode
+
+Run with ```mvn -Dmaven.surefire.debug test```
+
+The run will pause until you connect the debugger on port 5005, and then the tests to execute. Useful if your IDE is playing up and won't run the tests.
+
 ## Build a specific module
 
 Run with ```-pl <module>```, where &lt;module&gt; is the name of the module to build
